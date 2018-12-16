@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Loops</title>
+    <script type="text/javascript">
+        function getcube(){
+            var number = document.getElementById("jumlah").value;
+            for( var i=0; i < number; i++){
+                if (i % 2 == 1){
+                    document.write('Nama ' + (i+1) + 'x' + "<br>");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<h2></h2>
+
+<form>
+    Masukkan : <input type="text" id="jumlah"/><br<<br>
+    <input type="button" value="cube" onclick="getcube()"/>
+</form>
+
+</body>
+</html>
+

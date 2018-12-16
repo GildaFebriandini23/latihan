@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+<script>
+    function store() {
+        var user = document.getElementById("user").value;
+        localStorage.setItem('user', user);
+        sessionStorage.setItem('user', user);
+        window.location.href = "/latihan/bootcamp2.html";
+    }
+
+</script>
+</head>
+<body>
+<div>
+    <h2>Javascript Login Form Validation</h2>
+    <form id = "store()">
+        <label>User Name :</label>
+        <input type="text" id="user"/>
+        <label>Password :</label>
+        <input type="password" id="pw"/>
+
+        <input type="button" value="Login" onClick="store()"/>
+    </form>
+</body>
+</html>
